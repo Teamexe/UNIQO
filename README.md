@@ -1,4 +1,4 @@
-# NFT Marketplace Project Readme
+# NFT Marketplace 
 
 Welcome to the NFT Marketplace Project! This repository contains the smart contract code for the NFT marketplace deployed on the Sepholia test network, along with the client-side code using React and Bootstrap. The project utilizes Infura IPFS to store NFT metadata.
 
