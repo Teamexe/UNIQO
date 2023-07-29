@@ -1,48 +1,58 @@
-# NFT Marketplace
+# NFT Marketplace Project Readme
 
-## Technology Stack & Tools
+Welcome to the NFT Marketplace Project! This repository contains the smart contract code for the NFT marketplace deployed on the Sepholia test network, along with the client-side code using React and Bootstrap. The project utilizes Infura IPFS to store NFT metadata.
 
-- Solidity (Writing Smart Contract)
-- Javascript (React & Testing)
-- [Ethers](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ipfs](https://ipfs.io/) (Metadata storage)
-- [React routers](https://v5.reactrouter.com/) (Navigational components)
+## Project Overview
 
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
-- Install [Hardhat](https://hardhat.org/)
+The NFT Marketplace is a decentralized platform that allows users to buy, sell, and trade Non-Fungible Tokens (NFTs) in a secure and transparent manner. The platform is built on the Ethereum blockchain and utilizes Sepholia test network for testing and development purposes.
 
-## Setting Up
-### 1. Clone/Download the Repository
+## Getting Started
 
-### 2. Install Dependencies:
+To run the project on your local machine, follow the steps below:
+
+1. Clone the repository:
+
 ```
-$ cd nft_marketplace
-$ npm install
-```
-### 3. Boot up local development blockchain
-```
-$ cd nft_marketplace
-$ npx hardhat node
+git clone <repository-url>
+cd repository_name
 ```
 
-### 4. Connect development blockchain accounts to Metamask
-- Copy private key of the addresses and import to Metamask
-- Connect your metamask to hardhat blockchain, network 127.0.0.1:8545.
-- If you have not added hardhat to the list of networks on your metamask, open up a browser, click the fox icon, then click the top center dropdown button that lists all the available networks then click add networks. A form should pop up. For the "Network Name" field enter "Hardhat". For the "New RPC URL" field enter "http://127.0.0.1:8545". For the chain ID enter "31337". Then click save.  
+2. Install Dependencies:
+
+```
+npm install
+```
+
+3. Configure Infura IPFS:
+
+To use Infura IPFS, you will need to create an account on Infura (https://infura.io/) and obtain an API key. Set up your Infura API key in the project to interact with IPFS for storing NFT metadata.
+
+4. Deploy Smart Contract:
+
+Before running the client-side application, you need to deploy the smart contract on the Sepholia test network. You can use tools like Remix or Truffle to deploy the contract.
+
+5. Configure Client-Side:
+
+In the client-side code, update the smart contract address and ABI in the `config.js` file to connect with the deployed contract on the Sepholia test network.
 
 
-### 5. Migrate Smart Contracts
-`npx hardhat run src/backend/scripts/deploy.js --network localhost`
 
-### 6. Run Tests
-`$ npx hardhat test`
+## Running the Client-Side Application
 
-### 7. Launch Frontend
-`$ npm run start`
+To start the client-side application, run the following command in the terminal:
 
-License
-----
-MIT
+```
+npm start
+```
+
+This will launch the React application on your local server. Open your web browser and navigate to `http://localhost:3000/` to access the NFT Marketplace.
+
+## Contribution Guidelines
+
+We welcome contributions to the NFT Marketplace project! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+
+## License
+
+The NFT Marketplace project is open-source and distributed under the [MIT License](LICENSE).
 
